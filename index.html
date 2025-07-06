@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Venda Más en 7 Días! | El Secreto Revelado de Google Ads</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Fondo oscuro */
+            color: #e2e8f0; /* Texto claro */
+        }
+        /* Estilos personalizados para el botón CTA principal */
+        .cta-button-hero {
+            background-color: #4CAF50; /* Verde vibrante */
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 9999px; /* Muy redondeado */
+            font-weight: 800; /* Extra Bold */
+            font-size: 1.25rem; /* xl */
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 8px 20px 0 rgba(76, 175, 80, 0.45); /* Sombra más pronunciada */
+            display: inline-block;
+            text-decoration: none;
+            animation: pulse 2s infinite; /* Animación de pulsación */
+        }
+        .cta-button-hero:hover {
+            background-color: #45a049; /* Verde más oscuro */
+            transform: translateY(-2px); /* Ligero levantamiento */
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* Estilos para el botón CTA secundario/final */
+        .cta-button-secondary {
+            background-color: #3B82F6; /* Azul vibrante */
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem; /* Bordes redondeados */
+            font-weight: 700; /* Bold */
+            font-size: 1.125rem; /* lg */
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px 0 rgba(59, 130, 246, 0.3);
+            display: inline-block;
+            text-decoration: none;
+        }
+        .cta-button-secondary:hover {
+            background-color: #2563EB; /* Azul más oscuro */
+            transform: translateY(-1px);
+        }
+
+        .section-title {
+            font-size: 2.5rem; /* 4xl */
+            font-weight: 900; /* Black */
+            color: #fff;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .sub-section-title {
+            font-size: 2rem; /* 3xl */
+            font-weight: 800; /* Extra bold */
+            color: #fff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .faq-question {
+            background-color: #2d3748; /* bg-gray-800 */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #e2e8f0;
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #3d4858;
+        }
+        .faq-answer {
+            background-color: #1a202c; /* bg-gray-900 */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: -0.75rem; /* Para que se superponga un poco con la pregunta */
+            margin-bottom: 1rem;
+            color: #cbd5e0;
+            display: none; /* Oculto por defecto */
+        }
+        .faq-answer.active {
+            display: block;
+        }
+        .faq-arrow {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+        }
+        .faq-arrow.rotate {
+            transform: rotate(180deg);
+        }
+        .price-strike {
+            text-decoration: line-through;
+            color: #9ca3af; /* gray-400 */
+            font-size: 1.75rem; /* 2xl */
+            font-weight: 600;
+        }
+        .price-current {
+            color: #34D399; /* green-400 */
+            font-size: 4.5rem; /* 5xl */
+            font-weight: 900;
+            line-height: 1;
+        }
+        .countdown-box {
+            background-color: #2d3748;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-gray-800 py-16 px-4 md:px-8 text-center relative overflow-hidden">
+        <!-- Background elements for visual interest -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs><pattern id="pattern-circles" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#4a5568"/></pattern></defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-6 animate-fade-in-down">
+                ¡Transforme su Publicidad: Primeras Ventas en 7 Días con Google Ads!
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up">
+                Descubra la guía práctica y probada que le permitirá generar ventas confirmadas, incluso con un presupuesto mínimo, sin ser un experto.
+            </p>
+            
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-10 mb-16">
+                <!-- Ebook Image Placeholder -->
+                <div class="w-64 md:w-80 lg:w-96 flex-shrink-0 animate-scale-in">
+                    <img src="https://placehold.co/400x500/1a202c/e2e8f0?text=Portada+Ebook" alt="Portada del Ebook El Secreto Revelado de Google Ads" class="rounded-xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <!-- VSL Placeholder (or static image if VSL not ready) -->
+                <div class="w-full lg:w-3/5 bg-gray-800 rounded-xl shadow-xl overflow-hidden animate-fade-in-right">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <!-- Placeholder para tu VSL. Reemplaza con el embed de YouTube/Vimeo -->
+                        <img src="https://placehold.co/800x450/2d3748/cbd5e0?text=VIDEO+DE+VENTAS+AQUI" alt="Video Sales Letter" class="w-full h-full object-cover">
+                        <!-- <iframe src="URL_DE_TU_VSL_AQUI" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <a href="#precio-oferta" class="cta-button-hero inline-flex items-center justify-center gap-2 animate-bounce-in">
+                ¡Sí, Quiero Mis Primeras Ventas Ahora! <span class="text-2xl">&rarr;</span>
+            </a>
+            <p class="text-sm text-gray-400 mt-6 font-medium">Más de 5.000 emprendedores ya están transformando sus resultados.</p>
+        </div>
+    </section>
+
+    <!-- Social Proof Banner -->
+    <section class="bg-blue-700 py-8 px-4 md:px-8 text-center shadow-2xl">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6">
+            <div class="flex text-yellow-300 text-4xl md:text-5xl mb-2 md:mb-0">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p class="text-white text-xl md:text-3xl font-bold">
+                5.000+ personas ya confiaron… ¡y están vendiendo más!
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Propuesta de Valor Detallada -->
+    <section class="py-20 px-4 md:px-8 bg-gray-800">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="section-title">¿Qué Logrará con "El Secreto Revelado de Google Ads"?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-lg text-gray-300">
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">✅</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Campañas Rentables</h3>
+                    <p>Aprenda la estructura exacta para crear anuncios de Google Ads que convierten visitantes en clientes de forma consistente.</p>
+                </div>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">🎯</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Clientes Ideales</h3>
+                    <p>Domine la segmentación avanzada para llegar directamente a las personas que buscan y quieren comprar su producto.</p>
+                </div>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">💰</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Presupuesto Optimizado</h3>
+                    <p>Invierta cada peso de forma inteligente, maximizando su retorno y evitando el gasto innecesario.</p>
+                </div>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">🚀</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Ventas Rápidas</h3>
+                    <p>Implemente estrategias probadas que le permitirán ver sus primeras ventas confirmadas en tan solo 7 días.</p>
+                </div>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">📈</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Escalabilidad</h3>
+                    <p>Pase de las ventas iniciales a un flujo constante y creciente de clientes, asegurando el futuro de su negocio.</p>
+                </div>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-5xl mb-4">⏱️</span>
+                    <h3 class="font-bold text-white text-xl mb-2">Ahorro de Tiempo y Dinero</h3>
+                    <p>Aprenda de la experiencia y evite los errores costosos que frustran a la mayoría de los anunciantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "¿Para Quién Es Este Ebook?" -->
+    <section class="py-20 px-4 md:px-8 bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title">¿Es "El Secreto Revelado de Google Ads" Para Usted?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-base md:text-lg">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <h3 class="sub-section-title text-green-400">✅ Sí, es para usted si:</h3>
+                    <ul class="list-none space-y-4 pl-0">
+                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Es emprendedor o dueño de un negocio que busca **ventas online reales** en Colombia.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Está **empezando con Google Ads** o no ha visto los resultados esperados.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Tiene un **presupuesto limitado** (incluso $50) y necesita generar ventas rápidamente.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Busca una **guía práctica, paso a paso**, sin jerga complicada ni teorías vacías.</p></li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <h3 class="sub-section-title text-red-400">❌ No es para usted si:</h3>
+                    <ul class="list-none space-y-4 pl-0">
+                        <li class="flex items-start"><span class="text-red-400 text-3xl mr-3">&#10007;</span><p>Ya es un **experto avanzado** en Google Ads con campañas altamente rentables y escaladas.</p></li>
+                        <li class="flex items-start"><span class="text-red-400 text-3xl mr-3">&#10007;</span><p>Busca estrategias complejas de publicidad a **gran escala** con presupuestos ilimitados.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Qué Vas a Descubrir Dentro" -->
+    <section class="py-20 px-4 md:px-8 bg-gray-800">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="section-title">Descubra los Secretos que Impulsarán sus Ventas en Google Ads...</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-12">
+                Este kit no solo le dice qué hacer, le muestra **cómo hacerlo**, paso a paso, para resultados garantizados.
+            </p>
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
+                <!-- Ebook Internal Pages Placeholder -->
+                <div class="w-64 md:w-80 lg:w-96 flex-shrink-0 animate-scale-in">
+                    <img src="https://placehold.co/400x500/2d3748/cbd5e0?text=Paginas+Internas+Ebook" alt="Páginas internas del Ebook" class="rounded-xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-left w-full lg:w-3/5">
+                    <ul class="list-none space-y-5 pl-0 text-lg md:text-xl text-gray-300">
+                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">💡</span><p><strong>Módulo 1: Fundamentos para Vender Rápido.</strong> De cero a dominar la mentalidad de Google Ads en 7 días.</p></li>
+                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">🔍</span><p><strong>Módulo 2: Palabras Clave "Mata-Ventas".</strong> Encuentre las búsquedas exactas que sus clientes ideales usan para comprar.</p></li>
+                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">✍️</span><p><strong>Módulo 3: Anuncios Irresistibles.</strong> Cree textos que obliguen a hacer clic y conviertan con poco presupuesto.</p></li>
+                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">🎯</span><p><strong>Módulo 4: Segmentación Secreta.</strong> La estrategia precisa para llegar solo a quienes están listos para comprar.</p></li>
+                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">📊</span><p><strong>Módulo 5: Optimización y Escalado.</strong> Mantenga sus campañas rentables y crezca sin límites.</p></li>
+                        <li class="flex items-start"><span class="text-yellow-400 text-3xl mr-4">🎁</span><p><strong>BONUS EXCLUSIVO:</strong> Su Cuadro de Mando de Ventas Rápidas (Plantilla Editable). ¡Controle y optimice sus ganancias al instante!</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Prueba Social / Testimonios -->
+    <section class="py-20 px-4 md:px-8 bg-gray-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="section-title">Resultados Reales: Lo Que Dicen Nuestros Emprendedores...</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-gray-300">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-lg mb-5">"¡Increíble! En solo 5 días de aplicar lo aprendido, logré mi primera venta. Este ebook es oro puro para quien empieza y quiere resultados rápidos."</p>
+                    <p class="font-bold text-white">- Ana M., Emprendedora Digital</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-lg mb-5">"Estaba frustrado y a punto de rendirme con Google Ads. Gracias a esta guía, mis anuncios ahora realmente funcionan y me traen clientes cualificados."</p>
+                    <p class="font-bold text-white">- Carlos R., Dueño de Negocio</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-lg mb-5">"El cuadro de mando es una joya. Me ayudó a entender mis números y a optimizar mis campañas sin ser un experto en análisis de datos."</p>
+                    <p class="font-bold text-white">- Sofía L., Consultora de Marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Autor -->
+    <section class="py-20 px-4 md:px-8 bg-gray-800 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-title">Conozca al Experto Detrás de Sus Próximas Ventas</h2>
+            <img src="https://placehold.co/180x180/2d3748/cbd5e0?text=Foto+Autor" alt="Foto de Manuel A. Cortés G." class="rounded-full w-40 h-40 mx-auto mb-8 object-cover border-4 border-green-500 shadow-xl">
+            <h3 class="text-3xl font-bold text-white mb-4">Manuel A. Cortés G.</h3>
+            <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+                Con más de una década de experiencia comprobada en publicidad y marketing digital, me especializo en crear estrategias de alto impacto que transforman negocios. Mi pasión es convertir objetivos en resultados tangibles, impulsado por una mentalidad basada en datos y una constante búsqueda de la innovación. Este ebook es la condensación de años de éxito, diseñado para que usted también logre vender más.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Oferta y Llamada a la Acción Final -->
+    <section id="precio-oferta" class="bg-gradient-to-br from-gray-900 to-gray-800 py-20 px-4 md:px-8 text-center shadow-inner relative overflow-hidden">
+        <!-- Background elements for visual interest -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs><pattern id="pattern-circles-2" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#4a5568"/></pattern></defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles-2)"/>
+            </svg>
+        </div>
+        <div class="max-w-2xl mx-auto p-10 rounded-2xl bg-gray-800 shadow-2xl border-4 border-green-600 relative z-10 animate-fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
+                ¡Oferta Exclusiva por Tiempo Limitado!
+            </h2>
+            <p class="price-strike mb-2">
+                Precio Regular: COP 199,900
+            </p>
+            <p class="price-current mb-8">
+                HOY: COP 99,900
+            </p>
+            
+            <!-- Countdown Timer -->
+            <div class="flex justify-center items-center gap-4 mb-8">
+                <div class="countdown-box">
+                    <span id="minutes">00</span><br>MINUTOS
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">00</span><br>SEGUNDOS
+                </div>
+            </div>
+
+            <a href="URL_DE_TU_CHECKOUT_HOTMART_AQUI" class="cta-button-hero inline-flex items-center justify-center gap-2 w-full mb-8">
+                ¡Sí, Quiero Acceder a la Oferta Exclusiva! <span class="text-2xl">&rarr;</span>
+            </a>
+
+            <p class="text-lg text-gray-300 mb-5">
+                <span class="font-bold text-green-400">GARANTÍA DE SATISFACCIÓN TOTAL POR 7 DÍAS:</span> Si no está 100% contento, le devolvemos su dinero. ¡Su inversión está completamente segura!
+            </p>
+            <p class="text-sm text-gray-400">Pago 100% Seguro y Acceso Inmediato a su Kit Maestro.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+    <section class="py-20 px-4 md:px-8 bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title">Preguntas Frecuentes (Resuelva sus Dudas Aquí)</h2>
+            <div id="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Para quién es este ebook?
+                        <span class="faq-arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Este ebook está diseñado para emprendedores, dueños de pequeños y medianos negocios, y profesionales del marketing que desean generar ventas reales y recurrentes utilizando Google Ads, incluso si no tienen experiencia previa o cuentan con un presupuesto limitado.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Necesito experiencia previa en Google Ads?
+                        <span class="faq-arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, no necesita experiencia previa. El ebook está estructurado para llevarle desde cero hasta la creación de campañas rentables en 7 días. Explicamos cada concepto de forma clara y con ejemplos prácticos.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Qué presupuesto inicial necesito para empezar?
+                        <span class="faq-arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        El ebook le enseñará a optimizar su presupuesto para obtener resultados incluso con una inversión inicial de tan solo $50 COP, enfocándose en la eficiencia y el retorno de inversión.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Cómo accedo al ebook después de la compra?
+                        <span class="faq-arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Inmediatamente después de confirmar su pago, recibirá un correo electrónico de Hotmart con las instrucciones y el enlace para acceder y descargar el ebook (en sus versiones gráfica y completa) y el Cuadro de Mando de Ventas Rápidas.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Cuál es la garantía?
+                        <span class="faq-arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ofrecemos una Garantía de Satisfacción Total de 7 Días. Si dentro de los primeros 7 días posteriores a su compra, el contenido no cumple sus expectativas, le reembolsaremos el 100% de su dinero, sin preguntas ni complicaciones.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10 px-4 md:px-8 text-center text-gray-500 text-sm">
+        <div class="max-w-4xl mx-auto">
+            <p class="mb-4">&copy; 2025 El Secreto Revelado de Google Ads. Todos los derechos reservados.</p>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="#" class="hover:text-gray-300 transition-colors duration-200">Política de Privacidad</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-200">Términos y Condiciones</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-200">Descargo de Responsabilidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el acordeón de FAQs
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const arrow = item.querySelector('.faq-arrow');
+
+                question.addEventListener('click', () => {
+                    // Cierra todas las otras respuestas abiertas
+                    faqItems.forEach(otherItem => {
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        const otherArrow = otherItem.querySelector('.faq-arrow');
+                        if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                            otherAnswer.classList.remove('active');
+                            otherArrow.classList.remove('rotate');
+                        }
+                    });
+
+                    // Abre o cierra la respuesta actual
+                    answer.classList.toggle('active');
+                    arrow.classList.toggle('rotate');
+                });
+            });
+
+            // Countdown Timer Logic (simple example, resets on refresh)
+            const minutesSpan = document.getElementById('minutes');
+            const secondsSpan = document.getElementById('seconds');
+            let totalSeconds = 60 * 5; // 5 minutos para el ejemplo
+
+            function updateCountdown() {
+                const minutes = Math.floor(totalSeconds / 60);
+                const seconds = totalSeconds % 60;
+
+                minutesSpan.textContent = String(minutes).padStart(2, '0');
+                secondsSpan.textContent = String(seconds).padStart(2, '0');
+
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                } else {
+                    clearInterval(countdownInterval);
+                    // Opcional: Cambiar el texto de la oferta o deshabilitar el botón
+                }
+            }
+
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            updateCountdown(); // Llamar una vez para mostrar el estado inicial
+        });
+    </script>
+
+</body>
+</html>
