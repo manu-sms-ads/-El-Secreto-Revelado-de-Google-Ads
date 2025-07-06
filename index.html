@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Venda Más en 7 Días! | El Secreto Revelado de Google Ads</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1403074527678940');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1403074527678940&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLGECZS9PD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XLGECZS9PD');
+    </script>
+    <!-- End Google tag (gtag.js) -->
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -18,10 +47,11 @@
         .cta-button-hero {
             background-color: #4CAF50; /* Verde vibrante */
             color: white;
-            padding: 1.25rem 3rem;
+            /* Ajustes responsivos para padding y fuente */
+            padding: 0.75rem 1.25rem; /* py-3 px-5 - Ligeramente más pequeño para móvil */
             border-radius: 9999px; /* Muy redondeado */
             font-weight: 800; /* Extra Bold */
-            font-size: 1.25rem; /* xl */
+            font-size: 1rem; /* text-base - Más pequeño para móvil */
             text-align: center;
             transition: background-color 0.3s ease, transform 0.2s ease;
             box-shadow: 0 8px 20px 0 rgba(76, 175, 80, 0.45); /* Sombra más pronunciada */
@@ -38,8 +68,21 @@
             50% { transform: scale(1.03); }
             100% { transform: scale(1); }
         }
+        /* Media queries para el botón CTA principal */
+        @media (min-width: 768px) { /* md */
+            .cta-button-hero {
+                padding: 1rem 2.5rem; /* md:py-4 md:px-8 */
+                font-size: 1.125rem; /* md:text-xl */
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .cta-button-hero {
+                padding: 1.25rem 3rem; /* lg:py-5 lg:px-12 */
+                font-size: 1.25rem; /* lg:text-2xl */
+            }
+        }
 
-        /* Estilos para el botón CTA secundario/final */
+        /* Estilos para el botón CTA secundario/final (no usado en esta versión, pero mantenido) */
         .cta-button-secondary {
             background-color: #3B82F6; /* Azul vibrante */
             color: white;
@@ -59,25 +102,51 @@
         }
 
         .section-title {
-            font-size: 2.5rem; /* 4xl */
+            /* Ajustes responsivos para fuente */
+            font-size: 1.875rem; /* text-3xl */
             font-weight: 900; /* Black */
             color: #fff;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem; /* Reducido para móvil */
             text-align: center;
             line-height: 1.2;
         }
+        @media (min-width: 768px) { /* md */
+            .section-title {
+                font-size: 2.5rem; /* md:text-4xl */
+                margin-bottom: 2.5rem;
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .section-title {
+                font-size: 3rem; /* lg:text-5xl */
+            }
+        }
+
         .sub-section-title {
-            font-size: 2rem; /* 3xl */
+            /* Ajustes responsivos para fuente */
+            font-size: 1.375rem; /* text-2xl */
             font-weight: 800; /* Extra bold */
             color: #fff;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem; /* Reducido para móvil */
             text-align: center;
         }
+        @media (min-width: 768px) { /* md */
+            .sub-section-title {
+                font-size: 2rem; /* md:text-3xl */
+                margin-bottom: 1.5rem;
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .sub-section-title {
+                font-size: 2.25rem; /* lg:text-4xl */
+            }
+        }
+
         .faq-question {
             background-color: #2d3748; /* bg-gray-800 */
             border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
+            padding: 1.25rem; /* Reducido para móvil */
+            margin-bottom: 0.75rem; /* Reducido para móvil */
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -85,49 +154,157 @@
             font-weight: 700;
             color: #e2e8f0;
             transition: background-color 0.3s ease;
+            font-size: 1rem; /* text-base para móvil */
         }
         .faq-question:hover {
             background-color: #3d4858;
         }
+        @media (min-width: 768px) {
+            .faq-question {
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                font-size: 1.125rem; /* md:text-lg */
+            }
+        }
+
         .faq-answer {
             background-color: #1a202c; /* bg-gray-900 */
             border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-top: -0.75rem; /* Para que se superponga un poco con la pregunta */
-            margin-bottom: 1rem;
+            padding: 1.25rem; /* Reducido para móvil */
+            margin-top: -0.625rem; /* Ajustado para superposición */
+            margin-bottom: 0.75rem; /* Reducido para móvil */
             color: #cbd5e0;
             display: none; /* Oculto por defecto */
+            font-size: 0.875rem; /* text-sm para móvil */
         }
         .faq-answer.active {
             display: block;
         }
+        @media (min-width: 768px) {
+            .faq-answer {
+                padding: 1.5rem;
+                margin-top: -0.75rem;
+                margin-bottom: 1rem;
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+
         .faq-arrow {
             transition: transform 0.3s ease;
-            font-size: 1.5rem;
+            font-size: 1.25rem; /* Ajustado para móvil */
         }
-        .faq-arrow.rotate {
-            transform: rotate(180deg);
+        @media (min-width: 768px) {
+            .faq-arrow {
+                font-size: 1.5rem;
+            }
         }
+
         .price-strike {
             text-decoration: line-through;
             color: #9ca3af; /* gray-400 */
-            font-size: 1.75rem; /* 2xl */
+            font-size: 1.25rem; /* Ajustado para móvil */
             font-weight: 600;
         }
+        @media (min-width: 768px) { /* md */
+            .price-strike {
+                font-size: 1.75rem; /* md:text-2xl */
+            }
+        }
+
         .price-current {
-            color: #34D399; /* green-400 */
-            font-size: 4.5rem; /* 5xl */
+            /* Ajustes responsivos para fuente */
+            font-size: 2.75rem; /* Ajustado para móvil */
             font-weight: 900;
+            color: #34D399; /* green-400 */
             line-height: 1;
         }
+        @media (min-width: 768px) { /* md */
+            .price-current {
+                font-size: 4.5rem; /* md:text-5xl */
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .price-current {
+                font-size: 5.5rem; /* lg:text-6xl */
+            }
+        }
+
         .countdown-box {
+            /* Ajustes responsivos para fuente */
             background-color: #2d3748;
             border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-            font-size: 2.25rem;
+            padding: 0.4rem 0.6rem; /* Más pequeño para móvil */
+            font-size: 1.5rem; /* Más pequeño para móvil */
             font-weight: 700;
             color: #fff;
             line-height: 1;
+        }
+        @media (min-width: 768px) { /* md */
+            .countdown-box {
+                padding: 0.75rem 1rem;
+                font-size: 2.25rem;
+            }
+        }
+        /* Estilo para el contador de personas comprando */
+        .buyers-count {
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600;
+            color: #a7f3d0; /* green-200 */
+            margin-top: 1rem;
+        }
+        @media (min-width: 768px) {
+            .buyers-count {
+                font-size: 1rem; /* md:text-base */
+            }
+        }
+        /* Estilos para los métodos de pago */
+        .payment-method-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+            gap: 0.75rem; /* Espacio entre métodos */
+            justify-items: center;
+            margin-top: 2rem; /* Espacio superior para separar del CTA */
+        }
+        @media (min-width: 640px) { /* sm breakpoint */
+            .payment-method-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 columnas en sm */
+            }
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .payment-method-grid {
+                grid-template-columns: repeat(4, 1fr); /* 4 columnas en md */
+            }
+        }
+        .payment-method-item {
+            background-color: #2d3748; /* bg-gray-800 */
+            padding: 0.75rem 0.5rem; /* Ajustado para móvil */
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.75rem; /* text-xs */
+            color: #cbd5e0;
+            width: 100%; /* Asegura que ocupen el espacio de la columna */
+            height: 60px; /* Altura fija para uniformidad */
+        }
+        @media (min-width: 768px) {
+            .payment-method-item {
+                padding: 1rem;
+                font-size: 0.875rem; /* md:text-sm */
+                height: 80px;
+            }
+        }
+        .payment-method-icon {
+            font-size: 1.5rem; /* Ajustado para móvil */
+            margin-bottom: 0.25rem;
+        }
+        @media (min-width: 768px) {
+            .payment-method-icon {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -144,175 +321,175 @@
         </div>
 
         <div class="max-w-5xl mx-auto relative z-10">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-6 animate-fade-in-down">
-                ¡Transforme su Publicidad: Primeras Ventas en 7 Días con Google Ads!
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-6 animate-fade-in-down">
+                ¡Primeras Ventas en 7 Días con Google Ads!
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up">
-                Descubra la guía práctica y probada que le permitirá generar ventas confirmadas, incluso con un presupuesto mínimo, sin ser un experto.
+            <p class="text-base md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up">
+                Descubra el <strong class="font-bold">Kit Maestro</strong>: la guía práctica y probada para generar ventas confirmadas, incluso con presupuesto mínimo.
             </p>
             
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-10 mb-16">
-                <!-- Ebook Image Placeholder -->
-                <div class="w-64 md:w-80 lg:w-96 flex-shrink-0 animate-scale-in">
-                    <img src="https://placehold.co/400x500/1a202c/e2e8f0?text=Portada+Ebook" alt="Portada del Ebook El Secreto Revelado de Google Ads" class="rounded-xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300">
-                </div>
-                <!-- VSL Placeholder (or static image if VSL not ready) -->
-                <div class="w-full lg:w-3/5 bg-gray-800 rounded-xl shadow-xl overflow-hidden animate-fade-in-right">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <!-- Placeholder para tu VSL. Reemplaza con el embed de YouTube/Vimeo -->
-                        <img src="https://placehold.co/800x450/2d3748/cbd5e0?text=VIDEO+DE+VENTAS+AQUI" alt="Video Sales Letter" class="w-full h-full object-cover">
-                        <!-- <iframe src="URL_DE_TU_VSL_AQUI" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"></iframe> -->
-                    </div>
-                </div>
+            <!-- Kit Maestro Components in Hero Section -->
+            <div class="flex flex-col items-center justify-center gap-4 mb-12 px-2 md:px-4">
+                <h3 class="text-xl md:text-3xl font-bold text-white mb-2">Su Kit Maestro Incluye:</h3>
+                <ul class="list-none space-y-3 pl-0 text-base md:text-xl text-gray-300 w-full max-w-md">
+                    <li class="flex items-start bg-gray-700 p-3 rounded-lg shadow-md">
+                        <span class="text-blue-400 text-2xl mr-3 flex-shrink-0">📚</span>
+                        <p class="text-left"><strong class="font-bold">Ebook: Ventas en 7 Días (Guía Rápida y Visual).</strong> Su manual de inicio rápido.</p>
+                    </li>
+                    <li class="flex items-start bg-gray-700 p-3 rounded-lg shadow-md">
+                        <span class="text-blue-400 text-2xl mr-3 flex-shrink-0">📖</span>
+                        <p class="text-left"><strong class="font-bold">Guía COMPLETA: Ventas en 7 Días (Análisis Profundo).</strong> Para escalar sus campañas.</p>
+                    </li>
+                    <li class="flex items-start bg-gray-700 p-3 rounded-lg shadow-md">
+                        <span class="text-yellow-400 text-2xl mr-3 flex-shrink-0">📈</span>
+                        <p class="text-left"><strong class="font-bold">Plantilla de Seguimiento de Google Ads.</strong> Control y optimización de ganancias.</p>
+                    </li>
+                </ul>
             </div>
 
-            <a href="#precio-oferta" class="cta-button-hero inline-flex items-center justify-center gap-2 animate-bounce-in">
-                ¡Sí, Quiero Mis Primeras Ventas Ahora! <span class="text-2xl">&rarr;</span>
+            <a href="#precio-oferta" class="cta-button-hero inline-flex items-center justify-center gap-2 animate-bounce-in w-full md:w-auto max-w-xs mx-auto">
+                ¡Quiero Mi Kit Maestro Ahora! <span class="text-xl md:text-2xl">&rarr;</span>
             </a>
-            <p class="text-sm text-gray-400 mt-6 font-medium">Más de 5.000 emprendedores ya están transformando sus resultados.</p>
+            <!-- Dynamic Buyer Count -->
+            <p id="buyers-now" class="buyers-count">
+                <span class="font-bold">25</span> personas están comprando esto ahora mismo.
+            </p>
+            <p class="text-sm text-red-300 mt-2 font-semibold">¡Últimos cupos disponibles a este precio!</p>
         </div>
     </section>
 
     <!-- Social Proof Banner -->
-    <section class="bg-blue-700 py-8 px-4 md:px-8 text-center shadow-2xl">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6">
-            <div class="flex text-yellow-300 text-4xl md:text-5xl mb-2 md:mb-0">
+    <section class="bg-blue-700 py-6 px-4 md:px-8 text-center shadow-2xl">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
+            <div class="flex text-yellow-300 text-3xl md:text-4xl mb-1 md:mb-0">
                 ⭐⭐⭐⭐⭐
             </div>
-            <p class="text-white text-xl md:text-3xl font-bold">
+            <p class="text-white text-lg md:text-2xl font-bold">
                 5.000+ personas ya confiaron… ¡y están vendiendo más!
             </p>
         </div>
     </section>
 
     <!-- Sección de Propuesta de Valor Detallada -->
-    <section class="py-20 px-4 md:px-8 bg-gray-800">
+    <section class="py-16 px-4 md:px-8 bg-gray-800">
         <div class="max-w-5xl mx-auto">
             <h2 class="section-title">¿Qué Logrará con "El Secreto Revelado de Google Ads"?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-lg text-gray-300">
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">✅</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Campañas Rentables</h3>
-                    <p>Aprenda la estructura exacta para crear anuncios de Google Ads que convierten visitantes en clientes de forma consistente.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-base md:text-lg">
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">✅</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Campañas Rentables</h3>
+                    <p>Cree anuncios de Google Ads que conviertan visitantes en clientes.</p>
                 </div>
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">🎯</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Clientes Ideales</h3>
-                    <p>Domine la segmentación avanzada para llegar directamente a las personas que buscan y quieren comprar su producto.</p>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">🎯</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Clientes Ideales</h3>
+                    <p>Llegue a quienes buscan y quieren comprar su producto.</p>
                 </div>
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">💰</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Presupuesto Optimizado</h3>
-                    <p>Invierta cada peso de forma inteligente, maximizando su retorno y evitando el gasto innecesario.</p>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">💰</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Presupuesto Optimizado</h3>
+                    <p>Invierta inteligentemente, maximizando su retorno.</p>
                 </div>
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">🚀</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Ventas Rápidas</h3>
-                    <p>Implemente estrategias probadas que le permitirán ver sus primeras ventas confirmadas en tan solo 7 días.</p>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">🚀</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Ventas Rápidas</h3>
+                    <p>Vea sus primeras ventas confirmadas en solo 7 días.</p>
                 </div>
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">📈</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Escalabilidad</h3>
-                    <p>Pase de las ventas iniciales a un flujo constante y creciente de clientes, asegurando el futuro de su negocio.</p>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">📈</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Escalabilidad</h3>
+                    <p>Pase a un flujo constante de clientes para su negocio.</p>
                 </div>
-                <div class="flex flex-col items-center text-center bg-gray-700 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <span class="text-green-400 text-5xl mb-4">⏱️</span>
-                    <h3 class="font-bold text-white text-xl mb-2">Ahorro de Tiempo y Dinero</h3>
-                    <p>Aprenda de la experiencia y evite los errores costosos que frustran a la mayoría de los anunciantes.</p>
+                <div class="flex flex-col items-center text-center bg-gray-700 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <span class="text-green-400 text-4xl mb-3">⏱️</span>
+                    <h3 class="font-bold text-white text-lg mb-1">Ahorro Tiempo/Dinero</h3>
+                    <p>Evite errores costosos y frustraciones comunes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección "¿Para Quién Es Este Ebook?" -->
-    <section class="py-20 px-4 md:px-8 bg-gray-900">
+    <section class="py-16 px-4 md:px-8 bg-gray-900">
         <div class="max-w-4xl mx-auto">
-            <h2 class="section-title">¿Es "El Secreto Revelado de Google Ads" Para Usted?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-base md:text-lg">
-                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+            <h2 class="section-title">¿Es el Kit "El Secreto Revelado de Google Ads" Para Usted?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm md:text-base">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
                     <h3 class="sub-section-title text-green-400">✅ Sí, es para usted si:</h3>
-                    <ul class="list-none space-y-4 pl-0">
-                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Es emprendedor o dueño de un negocio que busca <strong class="font-bold">ventas online reales</strong> en Colombia.</p></li>
-                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Está <strong class="font-bold">empezando con Google Ads</strong> o no ha visto los resultados esperados.</p></li>
-                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Tiene un <strong class="font-bold">presupuesto limitado</strong> (incluso $50) y necesita generar ventas rápidamente.</p></li>
-                        <li class="flex items-start"><span class="text-green-400 text-3xl mr-3">&#10003;</span><p>Busca una <strong class="font-bold">guía práctica, paso a paso</strong>, sin jerga complicada ni teorías vacías.</p></li>
+                    <ul class="list-none space-y-3 pl-0">
+                        <li class="flex items-start"><span class="text-green-400 text-2xl mr-3">&#10003;</span><p>Es emprendedor o dueño de negocio buscando <strong class="font-bold">ventas online reales</strong>.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-2xl mr-3">&#10003;</span><p>Está <strong class="font-bold">empezando con Google Ads</strong> o no ve resultados.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-2xl mr-3">&#10003;</span><p>Tiene <strong class="font-bold">presupuesto limitado</strong> ($50) y necesita ventas rápidas.</p></li>
+                        <li class="flex items-start"><span class="text-green-400 text-2xl mr-3">&#10003;</span><p>Busca una <strong class="font-bold">guía práctica, paso a paso</strong>, sin jerga.</p></li>
                     </ul>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
                     <h3 class="sub-section-title text-red-400">❌ No es para usted si:</h3>
-                    <ul class="list-none space-y-4 pl-0">
-                        <li class="flex items-start"><span class="text-red-400 text-3xl mr-3">&#10007;</span><p>Ya es un <strong class="font-bold">experto avanzado</strong> en Google Ads con campañas altamente rentables y escaladas.</p></li>
-                        <li class="flex items-start"><span class="text-red-400 text-3xl mr-3">&#10007;</span><p>Busca estrategias complejas de publicidad a <strong class="font-bold">gran escala</strong> con presupuestos ilimitados.</p></li>
+                    <ul class="list-none space-y-3 pl-0">
+                        <li class="flex items-start"><span class="text-red-400 text-2xl mr-3">&#10007;</span><p>Ya es un <strong class="font-bold">experto avanzado</strong> en Google Ads con campañas muy rentables.</p></li>
+                        <li class="flex items-start"><span class="text-red-400 text-2xl mr-3">&#10007;</span><p>Busca estrategias para publicidad a <strong class="font-bold">gran escala</strong> con presupuestos ilimitados.</p></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección "Qué Vas a Descubrir Dentro" -->
-    <section class="py-20 px-4 md:px-8 bg-gray-800">
+    <!-- Sección "Qué Vas a Descubrir Dentro" (Ahora solo los módulos del ebook principal) -->
+    <section class="py-16 px-4 md:px-8 bg-gray-800">
         <div class="max-w-5xl mx-auto text-center">
-            <h2 class="section-title">Descubra los Secretos que Impulsarán sus Ventas en Google Ads...</h2>
-            <p class="text-lg md:text-xl text-gray-300 mb-12">
-                Este kit no solo le dice qué hacer, le muestra <strong class="font-bold">cómo hacerlo</strong>, paso a paso, para resultados garantizados.
+            <h2 class="section-title">Contenido Detallado del Ebook Principal:</h2>
+            <p class="text-base md:text-xl text-gray-300 mb-10">
+                El ebook principal de su Kit Maestro le guiará a través de estos módulos esenciales:
             </p>
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
-                <!-- Ebook Internal Pages Placeholder -->
-                <div class="w-64 md:w-80 lg:w-96 flex-shrink-0 animate-scale-in">
-                    <img src="https://placehold.co/400x500/2d3748/cbd5e0?text=Paginas+Internas+Ebook" alt="Páginas internas del Ebook" class="rounded-xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="text-left w-full lg:w-3/5">
-                    <ul class="list-none space-y-5 pl-0 text-lg md:text-xl text-gray-300">
-                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">💡</span><p><strong class="font-bold">Módulo 1: Fundamentos para Vender Rápido.</strong> De cero a dominar la mentalidad de Google Ads en 7 días.</p></li>
-                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">🔍</span><p><strong class="font-bold">Módulo 2: Palabras Clave "Mata-Ventas".</strong> Encuentre las búsquedas exactas que sus clientes ideales usan para comprar.</p></li>
-                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">✍️</span><p><strong class="font-bold">Módulo 3: Anuncios Irresistibles.</strong> Cree textos que obliguen a hacer clic y conviertan con poco presupuesto.</p></li>
-                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">🎯</span><p><strong class="font-bold">Módulo 4: Segmentación Secreta.</strong> La estrategia precisa para llegar solo a quienes están listos para comprar.</p></li>
-                        <li class="flex items-start"><span class="text-blue-400 text-3xl mr-4">📊</span><p><strong class="font-bold">Módulo 5: Optimización y Escalado.</strong> Mantenga sus campañas rentables y crezca sin límites.</p></li>
-                        <li class="flex items-start"><span class="text-yellow-400 text-3xl mr-4">🎁</span><p><strong class="font-bold">BONUS EXCLUSIVO:</strong> Su Cuadro de Mando de Ventas Rápidas (Plantilla Editable). ¡Controle y optimice sus ganancias al instante!</p></li>
-                    </ul>
-                </div>
+            <div class="text-left w-full max-w-2xl mx-auto">
+                <ul class="list-none space-y-4 pl-0 text-base md:text-xl text-gray-300">
+                    <li class="flex items-start"><span class="text-blue-400 text-2xl mr-3">💡</span><p><strong class="font-bold">Módulo 1: Fundamentos para Vender Rápido.</strong> Domine la mentalidad de Google Ads en 7 días.</p></li>
+                    <li class="flex items-start"><span class="text-blue-400 text-2xl mr-3">🔍</span><p><strong class="font-bold">Módulo 2: Palabras Clave "Mata-Ventas".</strong> Encuentre búsquedas exactas que sus clientes usan para comprar.</p></li>
+                    <li class="flex items-start"><span class="text-blue-400 text-2xl mr-3">✍️</span><p><strong class="font-bold">Módulo 3: Anuncios Irresistibles.</strong> Cree textos que conviertan con poco presupuesto.</p></li>
+                    <li class="flex items-start"><span class="text-blue-400 text-2xl mr-3">🎯</span><p><strong class="font-bold">Módulo 4: Segmentación Secreta.</strong> Llegue solo a quienes están listos para comprar.</p></li>
+                    <li class="flex items-start"><span class="text-blue-400 text-2xl mr-3">📊</span><p><strong class="font-bold">Módulo 5: Optimización y Escalado.</strong> Mantenga campañas rentables y crezca sin límites.</p></li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Sección de Prueba Social / Testimonios -->
-    <section class="py-20 px-4 md:px-8 bg-gray-900">
+    <section class="py-16 px-4 md:px-8 bg-gray-900">
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="section-title">Resultados Reales: Lo Que Dicen Nuestros Emprendedores...</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-gray-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-300">
                 <!-- Testimonio 1 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
-                    <p class="italic text-lg mb-5">"¡Increíble! En solo 5 días de aplicar lo aprendido, logré mi primera venta. Este ebook es oro puro para quien empieza y quiere resultados rápidos."</p>
-                    <p class="font-bold text-white">- Ana M., Emprendedora Digital</p>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-base mb-4">"¡Increíble! En solo 5 días de aplicar lo aprendido, logré mi primera venta. Este kit es oro puro para quien empieza y quiere resultados rápidos."</p>
+                    <p class="font-bold text-white text-sm">- Ana M., Emprendedora Digital</p>
                 </div>
                 <!-- Testimonio 2 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
-                    <p class="italic text-lg mb-5">"Estaba frustrado y a punto de rendirme con Google Ads. Gracias a esta guía, mis anuncios ahora realmente funcionan y me traen clientes cualificados."</p>
-                    <p class="font-bold text-white">- Carlos R., Dueño de Negocio</p>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-base mb-4">"Estaba frustrado y a punto de rendirme con Google Ads. Gracias a esta guía, mis anuncios ahora realmente funcionan y me traen clientes cualificados."</p>
+                    <p class="font-bold text-white text-sm">- Carlos R., Dueño de Negocio</p>
                 </div>
                 <!-- Testimonio 3 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
-                    <p class="italic text-lg mb-5">"El cuadro de mando es una joya. Me ayudó a entender mis números y a optimizar mis campañas sin ser un experto en análisis de datos."</p>
-                    <p class="font-bold text-white">- Sofía L., Consultora de Marketing</p>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <p class="italic text-base mb-4">"El cuadro de mando es una joya. Me ayudó a entender mis números y a optimizar mis campañas sin ser un experto en análisis de datos."</p>
+                    <p class="font-bold text-white text-sm">- Sofía L., Consultora de Marketing</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección del Autor -->
-    <section class="py-20 px-4 md:px-8 bg-gray-800 text-center">
+    <section class="py-16 px-4 md:px-8 bg-gray-800 text-center">
         <div class="max-w-3xl mx-auto">
             <h2 class="section-title">Conozca al Experto Detrás de Sus Próximas Ventas</h2>
-            <img src="https://placehold.co/180x180/2d3748/cbd5e0?text=Foto+Autor" alt="Foto de Manuel A. Cortés G." class="rounded-full w-40 h-40 mx-auto mb-8 object-cover border-4 border-green-500 shadow-xl">
-            <h3 class="text-3xl font-bold text-white mb-4">Manuel A. Cortés G.</h3>
-            <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
-                Con más de una década de experiencia comprobada en publicidad y marketing digital, me especializo en crear estrategias de alto impacto que transforman negocios. Mi pasión es convertir objetivos en resultados tangibles, impulsado por una mentalidad basada en datos y una constante búsqueda de la innovación. Este ebook es la condensación de años de éxito, diseñado para que usted también logre vender más.
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Manuel A. Cortés G.</h3>
+            <p class="text-base md:text-xl text-gray-300 leading-relaxed">
+                Con más de una década de experiencia en marketing digital, me especializo en estrategias de alto impacto que transforman negocios. Este kit es la condensación de años de éxito, diseñado para que usted también logre vender más.
             </p>
         </div>
     </section>
 
     <!-- Sección de Oferta y Llamada a la Acción Final -->
-    <section id="precio-oferta" class="bg-gradient-to-br from-gray-900 to-gray-800 py-20 px-4 md:px-8 text-center shadow-inner relative overflow-hidden">
+    <section id="precio-oferta" class="bg-gradient-to-br from-gray-900 to-gray-800 py-16 px-4 md:px-8 text-center shadow-inner relative overflow-hidden">
         <!-- Background elements for visual interest -->
         <div class="absolute inset-0 opacity-10">
             <svg class="w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
@@ -320,50 +497,86 @@
                 <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles-2)"/>
             </svg>
         </div>
-        <div class="max-w-2xl mx-auto p-10 rounded-2xl bg-gray-800 shadow-2xl border-4 border-green-600 relative z-10 animate-fade-in-up">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
+        <div class="max-w-xl mx-auto p-5 md:p-8 rounded-2xl bg-gray-800 shadow-2xl border-4 border-green-600 relative z-10 animate-fade-in-up">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4">
                 ¡Oferta Exclusiva por Tiempo Limitado!
             </h2>
-            <p class="price-strike mb-2">
+            <p class="price-strike mb-1">
                 Precio Regular: COP 199,900
             </p>
-            <p class="price-current mb-8">
+            <p class="price-current mb-6">
                 HOY: COP 99,900
             </p>
             
             <!-- Countdown Timer -->
-            <div class="flex justify-center items-center gap-4 mb-8">
+            <div class="flex justify-center items-center gap-2 mb-6">
                 <div class="countdown-box">
-                    <span id="minutes">00</span><br>MINUTOS
+                    <span id="minutes">00</span><br><span class="text-xs">MINUTOS</span>
                 </div>
                 <div class="countdown-box">
-                    <span id="seconds">00</span><br>SEGUNDOS
+                    <span id="seconds">00</span><br><span class="text-xs">SEGUNDOS</span>
                 </div>
             </div>
 
-            <a href="https://pay.hotmart.com/T100480517E" class="cta-button-hero inline-flex items-center justify-center gap-2 w-full mb-8">
-                ¡Sí, Quiero Acceder a la Oferta Exclusiva! <span class="text-2xl">&rarr;</span>
+            <a href="https://pay.hotmart.com/T100480517E" class="cta-button-hero inline-flex items-center justify-center gap-2 w-full mb-6">
+                ¡Acceder al Kit Maestro! <span class="text-xl md:text-2xl">&rarr;</span>
             </a>
 
-            <p class="text-lg text-gray-300 mb-5">
-                <span class="font-bold text-green-400">GARANTÍA DE SATISFACCIÓN TOTAL POR 7 DÍAS:</span> Si no está 100% contento, le devolvemos su dinero. ¡Su inversión está completamente segura!
+            <p class="text-sm text-gray-300 mb-4">
+                <span class="font-bold text-green-400">GARANTÍA DE SATISFACCIÓN TOTAL POR 7 DÍAS:</span> Si no está 100% contento, le devolvemos su dinero.
             </p>
-            <p class="text-sm text-gray-400">Pago 100% Seguro y Acceso Inmediato a su Kit Maestro.</p>
+            <p class="text-xs text-gray-400">Pago 100% Seguro y Acceso Inmediato a su Kit Maestro.</p>
+
+            <!-- Sección de Métodos de Pago MOVIDA AQUÍ -->
+            <div class="mt-8">
+                <h3 class="text-lg md:text-xl font-bold text-white mb-4">Métodos de Pago Seguros:</h3>
+                <div class="payment-method-grid">
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">💳</span>
+                        <span>Tarjeta de Crédito</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">💳</span>
+                        <span>Tarjeta de Débito</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">💸</span>
+                        <span>Efecty</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">📱</span>
+                        <span>Nequi</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">🏦</span>
+                        <span>PSE</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">🏛️</span>
+                        <span>Bancolombia</span>
+                    </div>
+                    <div class="payment-method-item">
+                        <span class="payment-method-icon">🅿️</span>
+                        <span>PayPal</span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400 mt-4">Transacciones procesadas de forma segura por Hotmart.</p>
+            </div>
         </div>
     </section>
 
     <!-- Sección de Preguntas Frecuentes (FAQ) -->
-    <section class="py-20 px-4 md:px-8 bg-gray-800">
+    <section class="py-16 px-4 md:px-8 bg-gray-800">
         <div class="max-w-4xl mx-auto">
-            <h2 class="section-title">Preguntas Frecuentes (Resuelva sus Dudas Aquí)</h2>
+            <h2 class="section-title">Preguntas Frecuentes</h2>
             <div id="faq-accordion">
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Para quién es este ebook?
+                        ¿Para quién es este kit?
                         <span class="faq-arrow">&#9660;</span>
                     </div>
                     <div class="faq-answer">
-                        Este ebook está diseñado para emprendedores, dueños de pequeños y medianos negocios, y profesionales del marketing que desean generar ventas reales y recurrentes utilizando Google Ads, incluso si no tienen experiencia previa o cuentan con un presupuesto limitado.
+                        Diseñado para emprendedores y dueños de negocio que buscan ventas reales con Google Ads, incluso sin experiencia o con presupuesto limitado.
                     </div>
                 </div>
                 <div class="faq-item">
@@ -372,25 +585,25 @@
                         <span class="faq-arrow">&#9660;</span>
                     </div>
                     <div class="faq-answer">
-                        No, no necesita experiencia previa. El ebook está estructurado para llevarle desde cero hasta la creación de campañas rentables en 7 días. Explicamos cada concepto de forma clara y con ejemplos prácticos.
+                        No, el kit le guía desde cero hasta campañas rentables en 7 días, con explicaciones claras y ejemplos prácticos.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Qué presupuesto inicial necesito para empezar?
+                        ¿Qué presupuesto inicial necesito?
                         <span class="faq-arrow">&#9660;</span>
                     </div>
                     <div class="faq-answer">
-                        El ebook le enseñará a optimizar su presupuesto para obtener resultados incluso con una inversión inicial de tan solo $50 COP, enfocándose en la eficiencia y el retorno de inversión.
+                        El kit le enseña a optimizar su presupuesto para resultados con solo $50 COP de inversión inicial.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        ¿Cómo accedo al ebook después de la compra?
+                        ¿Cómo accedo al kit después de la compra?
                         <span class="faq-arrow">&#9660;</span>
                     </div>
                     <div class="faq-answer">
-                        Inmediatamente después de confirmar su pago, recibirá un correo electrónico de Hotmart con las instrucciones y el enlace para acceder y descargar el ebook (en sus versiones gráfica y completa) y el Cuadro de Mando de Ventas Rápidas.
+                        Inmediatamente después del pago, recibirá un correo de Hotmart con instrucciones y enlaces para descargar el kit.
                     </div>
                 </div>
                 <div class="faq-item">
@@ -399,7 +612,7 @@
                         <span class="faq-arrow">&#9660;</span>
                     </div>
                     <div class="faq-answer">
-                        Ofrecemos una Garantía de Satisfacción Total de 7 Días. Si dentro de los primeros 7 días posteriores a su compra, el contenido no cumple sus expectativas, le reembolsaremos el 100% de su dinero, sin preguntas ni complicaciones.
+                        Garantía de Satisfacción Total de 7 Días. Si no está 100% contento, le reembolsamos su dinero, sin preguntas.
                     </div>
                 </div>
             </div>
@@ -407,10 +620,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-10 px-4 md:px-8 text-center text-gray-500 text-sm">
+    <footer class="bg-gray-900 py-8 px-4 md:px-8 text-center text-gray-500 text-xs">
         <div class="max-w-4xl mx-auto">
-            <p class="mb-4">&copy; 2025 El Secreto Revelado de Google Ads. Todos los derechos reservados.</p>
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <p class="mb-3">&copy; 2025 El Secreto Revelado de Google Ads. Todos los derechos reservados.</p>
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">
                 <a href="#" class="hover:text-gray-300 transition-colors duration-200">Política de Privacidad</a>
                 <a href="#" class="hover:text-gray-300 transition-colors duration-200">Términos y Condiciones</a>
                 <a href="#" class="hover:text-gray-300 transition-colors duration-200">Descargo de Responsabilidad</a>
@@ -461,12 +674,23 @@
                     totalSeconds--;
                 } else {
                     clearInterval(countdownInterval);
-                    // Opcional: Cambiar el texto de la oferta o deshabilitar el botón
+                    // Optional: Change offer text or disable button
                 }
             }
 
             const countdownInterval = setInterval(updateCountdown, 1000);
-            updateCountdown(); // Llamar una vez para mostrar el estado inicial
+            updateCountdown(); // Call once to display initial state
+
+            // Dynamic Buyer Count Logic
+            const buyersNowElement = document.getElementById('buyers-now');
+            function updateBuyersNow() {
+                // Generate a random number between 20 and 40 for simulation
+                const randomBuyers = Math.floor(Math.random() * (40 - 20 + 1)) + 20;
+                buyersNowElement.innerHTML = `<span class="font-bold">${randomBuyers}</span> personas están comprando esto ahora mismo.`;
+            }
+            // Update every 2 to 4 seconds
+            setInterval(updateBuyersNow, Math.random() * (4000 - 2000) + 2000);
+            updateBuyersNow(); // Initial call
         });
     </script>
 
